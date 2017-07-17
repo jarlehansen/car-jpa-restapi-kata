@@ -46,3 +46,10 @@ __Create a controller that uses the repository created previously:__
 ### Step 6 (REST API): Post a new car
 * Post a new car. The car entity should be serialized as JSON in the request body.
 * Return `401 - Created` with the `Location` header set, pointing to the new resource.
+
+### Step 7: Test application using postman
+
+Install [postman](https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop).
+
+* POST a new car: `{"licenseNumber":"AB12345","make":"Audi","model":"Q7","year":2017}`. Remember to set the `Content-Type` header to `application/json`.
+* From the response, use the `Location` header to create a GET request on the newly created `Car` resource.
