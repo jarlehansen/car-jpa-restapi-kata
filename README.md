@@ -36,6 +36,7 @@ The tests should call the REST endpoints and not just the methods:
 * Use JSON as the content-type.    
 * Use the `MockMvc` support in Spring.
 
+Create a controller that uses the repository created previously:
 * Get all cars by using the repository.
 
 ### Step 5 (REST API): Get a car by license number
