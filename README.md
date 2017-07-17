@@ -41,8 +41,8 @@ __Create a controller that uses the repository created previously:__
 
 ### Step 5 (REST API): Get a car by license number
 * Get a single car by using the license number.
-* If no car is present return `404 - Not Found`.
+* If no car is found return `404 - Not Found`.
 
 ### Step 6 (REST API): Post a new car
 * Post a new car. The car entity should be serialized as JSON in the request body.
-* Return `401 - Created` with the `Location` header set.
+* Return `401 - Created` with the `Location` header set, pointing to the new resource.
