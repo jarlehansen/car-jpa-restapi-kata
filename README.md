@@ -33,7 +33,7 @@ We shall now expose the functionality created with the repository as a REST API.
 Remember to create proper REST API, where the exposed value is the car resource and using the HTTP verbs.
 
 The tests should call the REST endpoints and not just the methods:
-* Use JSON as the content-type.    
+* Use `applicaiton/json` as the content-type.    
 * Use the `MockMvc` support in Spring.
 
 __Create a controller that uses the repository created previously:__
