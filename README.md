@@ -11,7 +11,7 @@ The following is a TDD Kata, an exercise in using the Spring test utilities for 
 This exercise is created to use TDD with integration tests using a database and a REST API.  
 It is also useful to get familar with the [Spring test features](https://spring.io/blog/2016/04/15/testing-improvements-in-spring-boot-1-4).
 
-### Step 1 (JPA / db): Get all cars from the database
+### Step 1 (JPA / db): Get all persisted cars
 Use the embedded H2 instance and the `src/test/resources/data.sql` as basis for the tests.
 * Create a repository that makes it possible to return all persisted cars.
 
