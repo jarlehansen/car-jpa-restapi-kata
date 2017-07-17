@@ -9,11 +9,11 @@ The following is a TDD Kata, an exercise in using the Spring test utilities for 
 
 ## The kata
 
-### Step 1: JPA / database integration
-Create a repository containing this functionality:
-* Get all persisted cars
-* Get car by license number
-* Persist a new car
+## Step 1: JPA / Database integration
+
+### Step 1.1: Get all cars from the database
+Use the embedded H2 instance and the `src/test/resources/data.sql` as basis for the tests.
+* Create a repository that makes it possible to return all persisted cars.
 
 The car entity should contain the following information:
 * License number
@@ -21,11 +21,25 @@ The car entity should contain the following information:
 * Model
 * Year
 
-Use the embedded H2 instance and the `src/test/resources/data.sql` as basis for the tests.
+### Step 1.2: Get a single car by license number
+* Get a specific car by sending in a license number. If no car is present, null should be returned.
 
-### Step 2: REST API
-Create a controller that uses the repository created in the previous step.  
+### Step 1.3: Persist a new car
+* Persist a new car in the database. After persisting the car make sure the new value is present in the database.
+
+## Step 2: REST API
+We shall now expose the functionality created with the repository as a REST API.
 Remember to create proper REST API, where the exposed value is the car resource and using the HTTP verbs.
 
-The tests should call the REST endpoints and not just the methods.  
-Use the `MockMvc` support in Spring.
+The tests should call the REST endpoints and not just the methods:
+* Use JSON as the content-type.    
+Æ Use the `MockMvc` support in Spring.
+
+### Step 2.1: Get all cars
+* Get all cars by using the repository.
+
+### Step 2.2: Get a car by license number
+* Get a single car by using the license number. If no car is present return `404 - Not Found`.
+
+### Step 2.3: Post a new car
+* Post a new car. The car entity should be serialized as JSON in the request body. Return `401 - Created` with the `Location` header set.
