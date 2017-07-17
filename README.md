@@ -1,4 +1,4 @@
-# Car REST API Kata
+# Car JPA / REST API Kata
 
 The following is a TDD Kata, an exercise in using the Spring test utilities for JPA and REST.
 
@@ -39,7 +39,9 @@ __Create a controller that uses the repository created previously:__
 * Get all cars by using the repository.
 
 ### Step 5 (REST API): Get a car by license number
-* Get a single car by using the license number. If no car is present return `404 - Not Found`.
+* Get a single car by using the license number.
+* If no car is present return `404 - Not Found`.
 
 ### Step 6 (REST API): Post a new car
-* Post a new car. The car entity should be serialized as JSON in the request body. Return `401 - Created` with the `Location` header set.
+* Post a new car. The car entity should be serialized as JSON in the request body.
+* Return `401 - Created` with the `Location` header set.
