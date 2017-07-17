@@ -51,5 +51,6 @@ __Create a controller that uses the repository created previously:__
 
 Install [postman](https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop).
 
-* POST a new car: `{"licenseNumber":"AB12345","make":"Audi","model":"Q7","year":2017}`. Remember to set the `Content-Type` header to `application/json`.
+* POST a new car: `{"licenseNumber":"AB12345","make":"Audi","model":"Q7","year":2017}`.  
+Remember to set the `Content-Type` header to `application/json`.
 * From the response, use the `Location` header to create a GET request on the newly created `Car` resource.
