@@ -9,6 +9,9 @@ The following is a TDD Kata, an exercise in using the Spring test utilities for 
 
 ## The kata
 
+This exercise is created to use TDD with integration tests using a database and a REST API.  
+It is also useful to get familar with the [Spring test features](https://spring.io/blog/2016/04/15/testing-improvements-in-spring-boot-1-4).
+
 ## Step 1: JPA / Database integration
 
 ### Step 1.1: Get all cars from the database
