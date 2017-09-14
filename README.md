@@ -45,7 +45,7 @@ __Create a controller that uses the repository created previously:__
 
 ### Step 6 (REST API): Post a new car
 * Post a new car. The car entity should be serialized as JSON in the request body.
-* Return `401 - Created` with the `Location` header set, pointing to the new resource.
+* Return `201 - Created` with the `Location` header set, pointing to the new resource.
 
 ### Step 7: Test application using postman
 
